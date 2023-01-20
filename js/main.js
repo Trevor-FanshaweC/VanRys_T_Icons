@@ -11,13 +11,11 @@ querySelector is the method (function) that makes the connection between JS and 
 */
 
 // step 1 - make the connection to the element(s) you want to interact with
-const jpgGraphic = document.querySelector('#bitmap');
-const vectorGraphic = document.querySelector('#vector');
+const vectorGraphic = document.querySelector('#newBadge');
 
-function logID() {
+function logThisId() {
     console.log('clicked on this element:', this.id);
 }
 
 // step 2 - decide how you want the user to interact with the obect you created in step 1
-jpgGraphic.addEventListener('click', logID);
-vectorGraphic.addEventListener('click', logID);
+vectorGraphic.addEventListener('click', logThisId);
